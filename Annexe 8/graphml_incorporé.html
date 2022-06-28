@@ -1,0 +1,127 @@
+<!DOCTYPE>
+
+<html>
+
+	<head>
+		<title>cytoscape-graphml.js avec le fichier graphml incorporé</title>
+
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+
+
+ 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+
+		<!-- for testing with local version of cytoscape.js -->
+		<!--<script src="../cytoscape.js/build/cytoscape.js"></script>-->
+
+		<script src="cytoscape-graphml.js"></script>
+
+		<style>
+			body {
+				font-family: helvetica neue, helvetica, liberation sans, arial, sans-serif;
+				font-size: 14px;
+			}
+
+			#cy {
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				z-index: 999;
+			}
+
+			h1 {
+				opacity: 0.5;
+				font-size: 1em;
+				font-weight: bold;
+			}
+		</style>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function(){
+
+                                var graphStr = '<?xml version="1.0" encoding="UTF-8"?><graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">'
+                                                + '<graph id="G" edgedefault="undirected">'
+                                                +    '<node id="Signý" d0="Actor" d1="0.0"/>'
+                                                +    '<node id="Odin" d0="Actor" d1="0.45"/>'
+                                                +    '<node id="Loki" d0="Actor" d1="0.3888"/>'
+                                                +    '<node id="King" d0="Actor" d1="0.157"/>'
+                                                +    '<node id="Son" d0="Actor" d1="0.75"/>'
+                                                +    '<node id="Battle">'
+                                                +        '<graph id="Battle:" edgedefault="undirected">'
+                                                +          '<node id="Battle::Signý"/>'
+                                                +          '<node id="Battle::Odin"/>'
+                                                +          '<node id="Battle::Loki"/>'
+                                                +          '<edge id="e0" source="Battle::Signý" target="Battle::Loki"/>'
+                                                +          '<edge id="e1" source="Battle::Odin" target="Battle::Loki"/>'
+                                                +        '</graph>'
+                                                +    '</node>'
+                                                +    '<node id="Saga">'
+                                                +        '<graph id="Saga:" edgedefault="undirected">'
+                                                +          '<node id="Saga::Signý">'
+                                                +              '<graph id="Saga::Signý:" edgedefault="undirected">'
+                                                +                '<node id="Saga::Signý::Signý"/>'
+                                                +               '</graph>'
+                                                +          '</node>'
+                                                +          '<node id="Saga::Odin"/>'
+                                                +          '<node id="Saga::Loki"/>'
+                                                +          '<edge id="e10" source="Saga::Odin" target="Saga::Signý::Signý"/>'
+                                                +          '<edge id="e11" source="Saga::Odin" target="Saga::Loki"/>'
+                                                +        '</graph>'
+                                                +    '</node>'
+                                                +    '<edge id="e2" source="Battle::Loki" target="Signý"/>'
+                                                +    '<edge id="e3" source="Signý" target="Loki"/>'
+                                                +    '<edge id="e4" source="Signý" target="Odin"/>'
+                                                +    '<edge id="e5" source="Odin" target="King"/>'
+                                                +    '<edge id="e6" source="King" target="Loki"/>'
+                                                +    '<edge id="e7" source="Loki" target="Son"/>'
+                                                +    '<edge id="e8" source="King" target="Saga::Odin"/>'
+                                                +    '<edge id="e9" source="Saga::Odin" target="Son"/>'
+                                                +  '</graph>'
+                                    + '</graphml>';
+
+				var cy = window.cy = cytoscape({
+					container: document.getElementById('cy'),
+
+					style: [
+						{
+							selector: 'node',
+							style: {
+								'content': 'data(id)'
+							}
+						},
+
+						{
+							selector: 'edge',
+							style: {
+								'target-arrow-shape': 'triangle'
+							}
+						},
+
+						{
+							selector: ':selected',
+							style: {
+
+							}
+						}
+					],
+					ready: function () {
+                                            this.graphml({layoutBy: 'cose'});
+                                            this.graphml(graphStr);
+                                            console.log(this.graphml());
+					}
+				});
+
+			});
+		</script>
+	</head>
+
+	<body>
+		<h1>cytoscape-graphml demo</h1>
+
+		<div id="cy"></div>
+
+	</body>
+
+</html>

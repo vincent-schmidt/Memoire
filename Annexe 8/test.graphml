@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="csrd" attr.type="double" for="edge" id="d8" />
+  <key attr.name="dist" attr.type="double" for="edge" id="d7" />
+  <key attr.name="coc" attr.type="double" for="edge" id="d6" />
+  <key attr.name="csr" attr.type="double" for="edge" id="d5" />
+  <key attr.name="cr" attr.type="double" for="edge" id="d4" />
+  <key attr.name="nbLiens" attr.type="int" for="edge" id="d3" />
+  <key attr.name="words" attr.type="string" for="edge" id="d2" />
+  <key attr.name="betweenness" attr.type="double" for="node" id="d1" />
+  <key attr.name="type" attr.type="string" for="node" id="d0" />
+  <graph edgedefault="undirected">
+    <node id="Battle">
+      <data key="d0">Action</data>
+      <data key="d1">0.509090909090909</data>
+    </node>
+    <node id="Warrior">
+      <data key="d0">Actor</data>
+      <data key="d1">0.0</data>
+    </node>
+    <node id="Winter">
+      <data key="d0">Chronotope</data>
+      <data key="d1">0.6181818181818182</data>
+    </node>
+    <node id="King">
+      <data key="d0">Actor</data>
+      <data key="d1">0.08181818181818182</data>
+    </node>
+    <node id="Son">
+      <data key="d0">Actor</data>
+      <data key="d1">0.0</data>
+    </node>
+    <node id="Völsung">
+      <data key="d0">Actor</data>
+      <data key="d1">0.08181818181818182</data>
+    </node>
+    <node id="Bread">
+      <data key="d0">Actor</data>
+      <data key="d1">0.43636363636363634</data>
+    </node>
+    <node id="Sigmund">
+      <data key="d0">Actor</data>
+      <data key="d1">0.0</data>
+    </node>
+    <node id="Sinfjötli">
+      <data key="d0">Actor</data>
+      <data key="d1">0.0</data>
+    </node>
+    <node id="Wolf">
+      <data key="d0">Actor</data>
+      <data key="d1">0.0</data>
+    </node>
+    <node id="Wife">
+      <data key="d0">Actor</data>
+      <data key="d1">0.0</data>
+    </node>
+    <node id="Signý">
+      <data key="d0">Actor</data>
+      <data key="d1">0.0</data>
+    </node>
+    <edge source="Battle" target="Warrior">
+      <data key="d2">être</data>
+      <data key="d3">1</data>
+      <data key="d4">0.286</data>
+      <data key="d5">2.1211730245314735</data>
+      <data key="d6">3.0</data>
+      <data key="d7">0.546227196320359</data>
+      <data key="d8">0.5242995327100721</data>
+    </edge>
+    <edge source="Battle" target="Winter">
+      <data key="d2">être</data>
+      <data key="d3">1</data>
+      <data key="d4">0.286</data>
+      <data key="d5">1.375530806634297</data>
+      <data key="d6">1.3416407864998738</data>
+      <data key="d7">0.5431299342698762</data>
+      <data key="d8">0.3404188596420592</data>
+    </edge>
+    <edge source="Battle" target="King">
+      <data key="d2">Völsungr</data>
+      <data key="d3">1</data>
+      <data key="d4">0.4765186250294945</data>
+      <data key="d5">1.4144355764756484</data>
+      <data key="d6">0.674166151627327</data>
+      <data key="d7">0.105533820171545</data>
+      <data key="d8">0.5578530272392541</data>
+    </edge>
+    <edge source="Battle" target="Son">
+      <data key="d2">Völsungr</data>
+      <data key="d3">1</data>
+      <data key="d4">0.4881526400625116</data>
+      <data key="d5">1.427499912434323</data>
+      <data key="d6">1.1968709203585823</data>
+      <data key="d7">0.37657050973224127</data>
+      <data key="d8">0.3859883417928578</data>
+    </edge>
+    <edge source="Battle" target="Völsung">
+      <data key="d2">Völsungr</data>
+      <data key="d3">1</data>
+      <data key="d4">0.5108815909777921</data>
+      <data key="d5">1.6236033998486206</data>
+      <data key="d6">1.224744871391589</data>
+      <data key="d7">0.0</data>
+      <data key="d8">0.8474042718797209</data>
+    </edge>
+    <edge source="Warrior" target="Winter">
+      <data key="d2">être</data>
+      <data key="d3">1</data>
+      <data key="d4">0.286</data>
+      <data key="d5">1.864369866737821</data>
+      <data key="d6">2.6832815729997477</data>
+      <data key="d7">0.531966399314844</data>
+      <data key="d8">0.46358817931435653</data>
+    </edge>
+    <edge source="Winter" target="Bread">
+      <data key="d2">garçon</data>
+      <data key="d3">1</data>
+      <data key="d4">0.6676900478515462</data>
+      <data key="d5">3.620196127283714</data>
+      <data key="d6">1.469693845669907</data>
+      <data key="d7">0.3782316425155357</data>
+      <data key="d8">0.9799209151763217</data>
+    </edge>
+    <edge source="Winter" target="Signý">
+      <data key="d2">Signý</data>
+      <data key="d3">1</data>
+      <data key="d4">0.5974947698515862</data>
+      <data key="d5">1.5552900051115868</data>
+      <data key="d6">1.4142135623730951</data>
+      <data key="d7">0.0</data>
+      <data key="d8">0.7997480853368766</data>
+    </edge>
+    <edge source="King" target="Son">
+      <data key="d2">appeler;Völsungr</data>
+      <data key="d3">2</data>
+      <data key="d4">1.7013332955274416</data>
+      <data key="d5">2.699453366310601</data>
+      <data key="d6">0.7080383029059547</data>
+      <data key="d7">0.3911323890241393</data>
+      <data key="d8">0.9281672540225057</data>
+    </edge>
+    <edge source="King" target="Völsung">
+      <data key="d2">appeler;roi;Siggeirr;Völsungr</data>
+      <data key="d3">4</data>
+      <data key="d4">3.40031071500285</data>
+      <data key="d5">5.8625778869044085</data>
+      <data key="d6">2.8977796697384868</data>
+      <data key="d7">0.4185111620190729</data>
+      <data key="d8">3.0033854448960566</data>
+    </edge>
+    <edge source="King" target="Wife">
+      <data key="d2">roi</data>
+      <data key="d3">1</data>
+      <data key="d4">0.3478505426185217</data>
+      <data key="d5">1.4089464148788626</data>
+      <data key="d6">2.8284271247461903</data>
+      <data key="d7">0.0</data>
+      <data key="d8">0.7064700984472025</data>
+    </edge>
+    <edge source="Son" target="Völsung">
+      <data key="d2">appeler;fille;fils;Völsungr</data>
+      <data key="d3">4</data>
+      <data key="d4">3.464776479431869</data>
+      <data key="d5">5.885380487900338</data>
+      <data key="d6">2.496902908243407</data>
+      <data key="d7">0.5737698390927084</data>
+      <data key="d8">2.449757878452579</data>
+    </edge>
+    <edge source="Völsung" target="Wife">
+      <data key="d2">roi</data>
+      <data key="d3">1</data>
+      <data key="d4">0.29351660941077934</data>
+      <data key="d5">1.2728558441551816</data>
+      <data key="d6">4.042771326701524</data>
+      <data key="d7">0.26964351466334213</data>
+      <data key="d8">0.37885353370398966</data>
+    </edge>
+    <edge source="Bread" target="Sigmund">
+      <data key="d2">Sigmundr</data>
+      <data key="d3">1</data>
+      <data key="d4">0.4472135954999579</data>
+      <data key="d5">1.5149752473225429</data>
+      <data key="d6">1.4142135623730951</data>
+      <data key="d7">0.0</data>
+      <data key="d8">0.8224962005991273</data>
+    </edge>
+    <edge source="Bread" target="Sinfjötli">
+      <data key="d2">Sigmundr</data>
+      <data key="d3">1</data>
+      <data key="d4">0.3687817782917155</data>
+      <data key="d5">1.3400675356115452</data>
+      <data key="d6">1.7578395831246945</data>
+      <data key="d7">0.2475463592945774</data>
+      <data key="d8">0.4044626064298157</data>
+    </edge>
+    <edge source="Bread" target="Wolf">
+      <data key="d2">Sigmundr</data>
+      <data key="d3">1</data>
+      <data key="d4">0.28982753492378877</data>
+      <data key="d5">1.3929985642490805</data>
+      <data key="d6">1.797220075561143</data>
+      <data key="d7">0.320964951357621</data>
+      <data key="d8">0.392632143360678</data>
+    </edge>
+    <edge source="Sigmund" target="Sinfjötli">
+      <data key="d2">Sigmundr;Sinfjötli</data>
+      <data key="d3">2</data>
+      <data key="d4">1.8018621394081353</data>
+      <data key="d5">3.1884770241914295</data>
+      <data key="d6">1.8910543593063913</data>
+      <data key="d7">0.0</data>
+      <data key="d8">1.7737930201964573</data>
+    </edge>
+    <edge source="Sigmund" target="Wolf">
+      <data key="d2">Sigmundr</data>
+      <data key="d3">1</data>
+      <data key="d4">0.648074069840786</data>
+      <data key="d5">1.517151937018834</data>
+      <data key="d6">1.2708265027138834</data>
+      <data key="d7">0.0</data>
+      <data key="d8">0.7876547467006086</data>
+    </edge>
+    <edge source="Sinfjötli" target="Wolf">
+      <data key="d2">Sigmundr</data>
+      <data key="d3">1</data>
+      <data key="d4">0.5344155686354956</data>
+      <data key="d5">1.341992920994742</data>
+      <data key="d6">1.5796122942038655</data>
+      <data key="d7">0.2942729821101489</data>
+      <data key="d8">0.38732931724825587</data>
+    </edge>
+  </graph>
+</graphml>
